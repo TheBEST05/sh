@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Интернет-магазин</title>
+</head>
+<body>
+	<h1>{{ product.title }}</h1>
+		<div>
+			<p>Описание: {{ product.description }}</p>
+			<p>Цена: {{ product.price }}</p>
+			<img src="{{ product.img.url }}">
+		</div>
+		<a href="{% url 'home' %}">Вернуться на Главную</a>
+
+</body>
+</html>
